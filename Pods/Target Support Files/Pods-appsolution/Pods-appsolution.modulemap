@@ -1,0 +1,6 @@
+framework module Pods_appsolution {
+  umbrella header "Pods-appsolution-umbrella.h"
+
+  export *
+  module * { export * }
+}
