@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3E0DFA27206ADF9E00953BEF /* ZDCChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E0DFA23206ADF9C00953BEF /* ZDCChat.framework */; };
+		3E0DFA28206ADF9E00953BEF /* ZDCChat.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3E0DFA24206ADF9C00953BEF /* ZDCChat.bundle */; };
+		3E0DFA29206ADF9E00953BEF /* ZDCChatAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E0DFA25206ADF9D00953BEF /* ZDCChatAPI.framework */; };
+		3E0DFA2A206ADF9E00953BEF /* ZDCChatStrings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3E0DFA26206ADF9E00953BEF /* ZDCChatStrings.bundle */; };
 		3EAF97872061573100718A3C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EAF97862061573100718A3C /* AppDelegate.swift */; };
 		3EAF97892061573100718A3C /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EAF97882061573100718A3C /* FirstViewController.swift */; };
 		3EAF978B2061573100718A3C /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EAF978A2061573100718A3C /* SecondViewController.swift */; };
@@ -42,6 +46,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3E0DFA23206ADF9C00953BEF /* ZDCChat.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ZDCChat.framework; sourceTree = "<group>"; };
+		3E0DFA24206ADF9C00953BEF /* ZDCChat.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ZDCChat.bundle; sourceTree = "<group>"; };
+		3E0DFA25206ADF9D00953BEF /* ZDCChatAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ZDCChatAPI.framework; sourceTree = "<group>"; };
+		3E0DFA26206ADF9E00953BEF /* ZDCChatStrings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ZDCChatStrings.bundle; sourceTree = "<group>"; };
 		3EAF97832061573100718A3C /* appsolution.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = appsolution.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EAF97862061573100718A3C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3EAF97882061573100718A3C /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -76,6 +84,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E0DFA27206ADF9E00953BEF /* ZDCChat.framework in Frameworks */,
+				3E0DFA29206ADF9E00953BEF /* ZDCChatAPI.framework in Frameworks */,
 				C7CF38F5C83ABD3CFE71C6E4 /* Pods_appsolution.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -115,6 +125,10 @@
 		3EAF977A2061573100718A3C = {
 			isa = PBXGroup;
 			children = (
+				3E0DFA24206ADF9C00953BEF /* ZDCChat.bundle */,
+				3E0DFA23206ADF9C00953BEF /* ZDCChat.framework */,
+				3E0DFA25206ADF9D00953BEF /* ZDCChatAPI.framework */,
+				3E0DFA26206ADF9E00953BEF /* ZDCChatStrings.bundle */,
 				3EAF97852061573100718A3C /* appsolution */,
 				3EAF979C2061573200718A3C /* appsolutionTests */,
 				3EAF97A72061573200718A3C /* appsolutionUITests */,
@@ -257,7 +271,7 @@
 				TargetAttributes = {
 					3EAF97822061573100718A3C = {
 						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 					3EAF97982061573200718A3C = {
 						CreatedOnToolsVersion = 9.2;
@@ -296,10 +310,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E0DFA2A206ADF9E00953BEF /* ZDCChatStrings.bundle in Resources */,
 				3EAF97932061573100718A3C /* LaunchScreen.storyboard in Resources */,
 				3EAF97902061573100718A3C /* Assets.xcassets in Resources */,
 				3EAF978E2061573100718A3C /* Main.storyboard in Resources */,
 				3EAF97B72061940600718A3C /* GoogleService-Info.plist in Resources */,
+				3E0DFA28206ADF9E00953BEF /* ZDCChat.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -462,9 +478,14 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-appsolution/Pods-appsolution-resources.sh",
+				"${PODS_ROOT}/ZDCChat/ZDCChatStrings.bundle",
+				"${PODS_ROOT}/ZDCChat/ZDCChat.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ZDCChatStrings.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ZDCChat.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -629,6 +650,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -650,13 +672,20 @@
 			baseConfigurationReference = A51D5D3FA3EEC91C6056DD7C /* Pods-appsolution.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = JK57NCB2UU;
+				CODE_SIGN_IDENTITY = "iPhone Developer: appsolutionn@gmail.com (65HP6U6PCS)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = WT96M2HD38;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = appsolution/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.appsolution.appsolution.appsolution;
+				PRODUCT_BUNDLE_IDENTIFIER = com.appsolution.appsolution;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "e06faea1-3e12-4817-bc2d-88a47ae9b449";
+				PROVISIONING_PROFILE_SPECIFIER = appsolution27031;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -667,13 +696,20 @@
 			baseConfigurationReference = E6BA494BBB302EEB39125556 /* Pods-appsolution.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = JK57NCB2UU;
+				CODE_SIGN_IDENTITY = "iPhone Developer: appsolutionn@gmail.com (65HP6U6PCS)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = WT96M2HD38;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = appsolution/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.appsolution.appsolution.appsolution;
+				PRODUCT_BUNDLE_IDENTIFIER = com.appsolution.appsolution;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "e06faea1-3e12-4817-bc2d-88a47ae9b449";
+				PROVISIONING_PROFILE_SPECIFIER = appsolution27031;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -685,12 +721,15 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = JK57NCB2UU;
+				DEVELOPMENT_TEAM = WT96M2HD38;
 				INFOPLIST_FILE = appsolutionTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.appsolution.appsolution.appsolutionTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/appsolution.app/appsolution";
@@ -703,12 +742,15 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = JK57NCB2UU;
+				DEVELOPMENT_TEAM = WT96M2HD38;
 				INFOPLIST_FILE = appsolutionTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.appsolution.appsolution.appsolutionTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/appsolution.app/appsolution";
@@ -720,12 +762,15 @@
 			baseConfigurationReference = C42CE3321FAEC077EB262573 /* Pods-appsolutionUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = JK57NCB2UU;
+				DEVELOPMENT_TEAM = WT96M2HD38;
 				INFOPLIST_FILE = appsolutionUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.appsolution.appsolution.appsolutionUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = appsolution;
@@ -737,12 +782,15 @@
 			baseConfigurationReference = ABDCBEE22673A905E2E8322E /* Pods-appsolutionUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = JK57NCB2UU;
+				DEVELOPMENT_TEAM = WT96M2HD38;
 				INFOPLIST_FILE = appsolutionUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.appsolution.appsolution.appsolutionUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = appsolution;

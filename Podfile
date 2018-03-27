@@ -9,6 +9,9 @@ target 'appsolution' do
 	pod ‘Firebase/Core’
 	pod ‘Firebase/Storage’
 
+  # Pods for Zendesk chat
+	pod ‘ZDCChat’
+
   target 'appsolutionTests' do
     inherit! :search_paths
     # Pods for testing
