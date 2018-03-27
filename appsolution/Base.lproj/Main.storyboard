@@ -81,6 +81,16 @@
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                     </textView>
+                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pu6-Fc-vIH">
+                                                        <rect key="frame" x="46" y="115" width="60" height="60"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <size key="titleShadowOffset" width="1" height="0.0"/>
+                                                        <state key="normal" image="message" backgroundImage="message"/>
+                                                        <connections>
+                                                            <action selector="buttonChat:" destination="9pv-A4-QxB" eventType="touchUpInside" id="f9u-4H-duw"/>
+                                                        </connections>
+                                                    </button>
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <constraints>
@@ -145,7 +155,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="206" y="-1013"/>
+            <point key="canvasLocation" x="205.59999999999999" y="-1013.3433283358322"/>
         </scene>
         <!--Services-->
         <scene sceneID="3bg-yu-eSD">
@@ -784,6 +794,7 @@
         <image name="hand-shake" width="30" height="30"/>
         <image name="home" width="30" height="30"/>
         <image name="logo" width="512" height="512"/>
+        <image name="message" width="30" height="30"/>
         <image name="shopping-bag" width="30" height="30"/>
         <image name="trophy" width="30" height="30"/>
     </resources>

@@ -8,6 +8,7 @@
 
 import UIKit
 //import FirebaseStorage
+import ZDCChat
 
 class FirstViewController: UIViewController {
     @IBOutlet weak var imageViewHomeTop: UIImageView!
@@ -15,6 +16,9 @@ class FirstViewController: UIViewController {
     @IBOutlet weak var textViewHomeOne: UITextView!
     @IBOutlet weak var imageViewHomeTwo: UIImageView!
     @IBOutlet weak var textViewHomeTwo: UITextView!
+    @IBAction func buttonChat(_ sender: UIButton) {
+        ZDCChat.start(in: self.navigationController, withConfig: nil)
+    }
     
     let urlImageHomeTop = URL(string: "https://firebasestorage.googleapis.com/v0/b/appsolution-669ae.appspot.com/o/slider4.jpg?alt=media&token=2821e037-d86c-438e-ba21-3c055bc5bc5b")
     let urlImageHomeOne = URL(string: "https://firebasestorage.googleapis.com/v0/b/appsolution-669ae.appspot.com/o/home_image_two.jpg?alt=media&token=f01bba17-d978-4213-b6e2-963e3fb12ac3")
