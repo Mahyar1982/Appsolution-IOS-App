@@ -11,6 +11,8 @@
 		3E0DFA28206ADF9E00953BEF /* ZDCChat.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3E0DFA24206ADF9C00953BEF /* ZDCChat.bundle */; };
 		3E0DFA29206ADF9E00953BEF /* ZDCChatAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E0DFA25206ADF9D00953BEF /* ZDCChatAPI.framework */; };
 		3E0DFA2A206ADF9E00953BEF /* ZDCChatStrings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3E0DFA26206ADF9E00953BEF /* ZDCChatStrings.bundle */; };
+		3EAB589620729830006E1421 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EAB589520729830006E1421 /* MessageUI.framework */; };
+		3EAB58982072A2DF006E1421 /* ViewControllerFeedback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EAB58972072A2DF006E1421 /* ViewControllerFeedback.swift */; };
 		3EAF97872061573100718A3C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EAF97862061573100718A3C /* AppDelegate.swift */; };
 		3EAF97892061573100718A3C /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EAF97882061573100718A3C /* FirstViewController.swift */; };
 		3EAF978B2061573100718A3C /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EAF978A2061573100718A3C /* SecondViewController.swift */; };
@@ -50,6 +52,8 @@
 		3E0DFA24206ADF9C00953BEF /* ZDCChat.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ZDCChat.bundle; sourceTree = "<group>"; };
 		3E0DFA25206ADF9D00953BEF /* ZDCChatAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ZDCChatAPI.framework; sourceTree = "<group>"; };
 		3E0DFA26206ADF9E00953BEF /* ZDCChatStrings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ZDCChatStrings.bundle; sourceTree = "<group>"; };
+		3EAB589520729830006E1421 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		3EAB58972072A2DF006E1421 /* ViewControllerFeedback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerFeedback.swift; sourceTree = "<group>"; };
 		3EAF97832061573100718A3C /* appsolution.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = appsolution.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EAF97862061573100718A3C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3EAF97882061573100718A3C /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -84,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3EAB589620729830006E1421 /* MessageUI.framework in Frameworks */,
 				3E0DFA27206ADF9E00953BEF /* ZDCChat.framework in Frameworks */,
 				3E0DFA29206ADF9E00953BEF /* ZDCChatAPI.framework in Frameworks */,
 				C7CF38F5C83ABD3CFE71C6E4 /* Pods_appsolution.framework in Frameworks */,
@@ -157,6 +162,7 @@
 				3EAF978A2061573100718A3C /* SecondViewController.swift */,
 				3EAF97B820619BA300718A3C /* ThirdViewController.swift */,
 				3EAF97BA20619BC900718A3C /* FourthViewController.swift */,
+				3EAB58972072A2DF006E1421 /* ViewControllerFeedback.swift */,
 				3EAF978C2061573100718A3C /* Main.storyboard */,
 				3EAF978F2061573100718A3C /* Assets.xcassets */,
 				3EAF97912061573100718A3C /* LaunchScreen.storyboard */,
@@ -187,6 +193,7 @@
 		9187D1C69FF1CA0CDEEC771A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3EAB589520729830006E1421 /* MessageUI.framework */,
 				E60260D66B039A6ED4DCBE39 /* Pods_appsolution.framework */,
 				4B9FDA24A345A1657A26FEA1 /* Pods_appsolutionTests.framework */,
 				8C3FDED1244A750D3A2F6371 /* Pods_appsolutionUITests.framework */,
@@ -501,6 +508,7 @@
 			files = (
 				3EAF978B2061573100718A3C /* SecondViewController.swift in Sources */,
 				3EAF97872061573100718A3C /* AppDelegate.swift in Sources */,
+				3EAB58982072A2DF006E1421 /* ViewControllerFeedback.swift in Sources */,
 				3EAF97B920619BA300718A3C /* ThirdViewController.swift in Sources */,
 				3EF9FE942067B50D00812EB5 /* InitialViewController.swift in Sources */,
 				3EAF97892061573100718A3C /* FirstViewController.swift in Sources */,
